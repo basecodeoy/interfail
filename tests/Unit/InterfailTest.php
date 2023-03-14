@@ -2,8 +2,11 @@
 
 declare(strict_types=1);
 
+namespace Tests\Unit;
+
 use Illuminate\Support\Facades\Cache;
 use PreemStudio\Interfail\Interfail;
+use RuntimeException;
 
 it('should execute the function and pass', function (): void {
     expect(Interfail::make('id')->run(fn () => 'Hello, World!'))->toBeOk();

@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Tests\Unit\Extensions;
+
 use Carbon\Carbon;
 use PreemStudio\Interfail\Extensions\DeadlineExtension;
 use PreemStudio\Interfail\Interfail;

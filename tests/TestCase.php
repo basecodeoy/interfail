@@ -4,17 +4,12 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use PreemStudio\Interfail\ServiceProvider;
-use PreemStudio\Jetpack\Tests\AbstractTestCase;
-use Spatie\LaravelData\LaravelDataServiceProvider;
+use PreemStudio\Jetpack\TestBench\AbstractPackageTestCase;
 
-abstract class TestCase extends AbstractTestCase
+abstract class TestCase extends AbstractPackageTestCase
 {
-    protected function getPackageProviders($app)
+    protected function getServiceProviderClass(): string
     {
-        return [
-            LaravelDataServiceProvider::class,
-            ServiceProvider::class,
-        ];
+        return \PreemStudio\Interfail\ServiceProvider::class;
     }
 }
