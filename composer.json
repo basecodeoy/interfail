@@ -19,7 +19,7 @@
         "php": "^8.2",
         "illuminate/contracts": "^10.0",
         "nesbot/carbon": "^2.66",
-        "preemstudio/laravel-jetpack": "^1.3",
+        "preemstudio/laravel-jetpack": "^2.0",
         "spatie/macroable": "^2.0"
     },
     "require-dev": {
