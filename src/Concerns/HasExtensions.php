@@ -8,7 +8,9 @@ use PreemStudio\Interfail\Contracts\Extension;
 
 trait HasExtensions
 {
-    /** @var Extension[] */
+    /**
+     * @var Extension[]
+     */
     private array $extensions = [];
 
     public function addExtension(Extension $extension): self

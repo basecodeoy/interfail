@@ -27,7 +27,7 @@ final class Result extends Data
 
     public function hasFailed(): bool
     {
-        return ! empty($this->exception);
+        return !empty($this->exception);
     }
 
     public function throw(): self

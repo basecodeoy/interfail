@@ -35,7 +35,7 @@ uses(
 |
 */
 
-expect()->extend('toBeOk', function () {
+expect()->extend('toBeOk', function (): void {
     expect($this->value)->toBeInstanceOf(Result::class);
     expect($this->value->result)->toBe('Hello, World!');
     expect($this->value->state->consecutiveFailures)->toBe(0);
@@ -45,7 +45,7 @@ expect()->extend('toBeOk', function () {
     expect($this->value->hasFailed())->toBeFalse();
 });
 
-expect()->extend('toBeErr', function () {
+expect()->extend('toBeErr', function (): void {
     expect($this->value)->toBeInstanceOf(Result::class);
     expect($this->value->result)->toBeNull();
     expect($this->value->state->consecutiveFailures)->toBe(1);
@@ -55,7 +55,7 @@ expect()->extend('toBeErr', function () {
     expect($this->value->hasFailed())->toBeTrue();
 });
 
-expect()->extend('toHaveErrors', function (int $consecutiveFailures, int $totalFailures) {
+expect()->extend('toHaveErrors', function (int $consecutiveFailures, int $totalFailures): void {
     expect($this->value->state->consecutiveFailures)->toBe($consecutiveFailures);
     expect($this->value->state->totalFailures)->toBe($totalFailures);
 });
@@ -71,7 +71,7 @@ expect()->extend('toHaveErrors', function (int $consecutiveFailures, int $totalF
 |
 */
 
-function something()
+function something(): void
 {
     // ..
 }

@@ -13,7 +13,7 @@ it('should pass if the deadline is in the future', function (): void {
         Interfail::make('id')
             ->withoutStateCache()
             ->addExtension(new DeadlineExtension(Carbon::now()->addMinute()))
-            ->run(fn (): string => 'Hello, World!')
+            ->run(fn (): string => 'Hello, World!'),
     )->toBeOk();
 });
 
@@ -22,6 +22,6 @@ it('should fail if the deadline is in the past', function (): void {
         Interfail::make('id')
             ->withoutStateCache()
             ->addExtension(new DeadlineExtension(Carbon::now()->subMinute()))
-            ->run(fn (): string => 'Hello, World!')
+            ->run(fn (): string => 'Hello, World!'),
     )->toBeErr();
 });

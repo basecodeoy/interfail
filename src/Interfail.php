@@ -41,7 +41,7 @@ final class Interfail
             $result = new Result(
                 retry($this->retry?->times, $callback, $this->retry?->sleepMilliseconds, $this->retry?->when),
                 $this->state,
-                null
+                null,
             );
 
             foreach ($this->extensions as $extension) {

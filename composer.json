@@ -25,6 +25,7 @@
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.30",
+        "friendsofphp/php-cs-fixer": "^3.16",
         "graham-campbell/analyzer": "^4.0",
         "mockery/mockery": "^1.5",
         "nunomaduro/collision": "^6.4",
