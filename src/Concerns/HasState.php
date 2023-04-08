@@ -35,7 +35,7 @@ trait HasState
     private function restoreState(): void
     {
         if (Cache::has($this->getCacheKey())) {
-            $this->state = State::from(Cache::get($this->getCacheKey()));
+            $this->state = new State(...Cache::get($this->getCacheKey()));
         } else {
             $this->state = new State(0, 0, []);
 

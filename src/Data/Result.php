@@ -4,11 +4,10 @@ declare(strict_types=1);
 
 namespace PreemStudio\Interfail\Data;
 
-use Spatie\LaravelData\Data;
 use Spatie\Macroable\Macroable;
 use Throwable;
 
-final class Result extends Data
+final class Result
 {
     use Macroable;
 
@@ -37,5 +36,14 @@ final class Result extends Data
         }
 
         throw $this->exception;
+    }
+
+    public function toArray(): array
+    {
+        return [
+            'result' => $this->result,
+            'state' => $this->state,
+            'exception' => $this->exception,
+        ];
     }
 }

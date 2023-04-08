@@ -5,9 +5,8 @@ declare(strict_types=1);
 namespace PreemStudio\Interfail\Data;
 
 use Closure;
-use Spatie\LaravelData\Data;
 
-final class Retry extends Data
+final class Retry
 {
     public function __construct(
         public readonly int|array $times,
@@ -15,5 +14,14 @@ final class Retry extends Data
         public readonly Closure|null $when,
     ) {
         //
+    }
+
+    public function toArray(): array
+    {
+        return [
+            'times' => $this->times,
+            'sleepMilliseconds' => $this->sleepMilliseconds,
+            'when' => $this->when,
+        ];
     }
 }

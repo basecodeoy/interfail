@@ -4,10 +4,9 @@ declare(strict_types=1);
 
 namespace PreemStudio\Interfail\Data;
 
-use Spatie\LaravelData\Data;
 use Spatie\Macroable\Macroable;
 
-final class State extends Data
+final class State
 {
     use Macroable;
 
@@ -17,5 +16,14 @@ final class State extends Data
         public array $meta,
     ) {
         //
+    }
+
+    public function toArray(): array
+    {
+        return [
+            'totalFailures' => $this->totalFailures,
+            'consecutiveFailures' => $this->consecutiveFailures,
+            'meta' => $this->meta,
+        ];
     }
 }
