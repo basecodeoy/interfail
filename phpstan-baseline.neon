@@ -26,6 +26,16 @@ parameters:
 			path: src/Interfail.php
 
 		-
+			message: "#^Only iterables can be unpacked, mixed given in argument \\#1\\.$#"
+			count: 1
+			path: src/Interfail.php
+
+		-
+			message: "#^Parameter \\#1 \\$totalFailures of class BombenProdukt\\\\Interfail\\\\Data\\\\State constructor expects int, mixed given\\.$#"
+			count: 1
+			path: src/Interfail.php
+
+		-
 			message: "#^Parameter \\#3 \\$sleepMilliseconds of function retry expects int, Closure\\|int given\\.$#"
 			count: 1
 			path: src/Interfail.php
