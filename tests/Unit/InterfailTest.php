@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Unit;
 
-use Illuminate\Support\Facades\Cache;
 use BombenProdukt\Interfail\Interfail;
+use Illuminate\Support\Facades\Cache;
 use RuntimeException;
 
 it('should execute the function and pass', function (): void {

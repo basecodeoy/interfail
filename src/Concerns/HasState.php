@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Interfail\Concerns;
 
-use Illuminate\Support\Facades\Cache;
 use BombenProdukt\Interfail\Data\State;
+use Illuminate\Support\Facades\Cache;
 
 trait HasState
 {

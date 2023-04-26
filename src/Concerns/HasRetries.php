@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Interfail\Concerns;
 
-use Closure;
 use BombenProdukt\Interfail\Data\Retry;
+use Closure;
 
 trait HasRetries
 {

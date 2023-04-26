@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Interfail\Extensions;
 
-use Carbon\Carbon;
 use BombenProdukt\Interfail\Contracts\Extension;
 use BombenProdukt\Interfail\Data\Result;
+use Carbon\Carbon;
 use RuntimeException;
 
 final class DeadlineExtension implements Extension

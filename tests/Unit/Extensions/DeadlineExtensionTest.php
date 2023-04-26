@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Extensions;
 
-use Carbon\Carbon;
 use BombenProdukt\Interfail\Extensions\DeadlineExtension;
 use BombenProdukt\Interfail\Interfail;
+use Carbon\Carbon;
 
 it('should pass if the deadline is in the future', function (): void {
     expect(
