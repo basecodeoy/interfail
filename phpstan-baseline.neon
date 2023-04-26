@@ -1,0 +1,36 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\Interfail\\\\Extensions\\\\FailuresAllowedForDaysExtension\\:\\:validate\\(\\)\\.$#"
+			count: 1
+			path: src/Extensions/FailuresAllowedForDaysExtension.php
+
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\Interfail\\\\Extensions\\\\FailuresAllowedForExtension\\:\\:validate\\(\\)\\.$#"
+			count: 1
+			path: src/Extensions/FailuresAllowedForExtension.php
+
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\Interfail\\\\Extensions\\\\FailuresAllowedForHoursExtension\\:\\:validate\\(\\)\\.$#"
+			count: 1
+			path: src/Extensions/FailuresAllowedForHoursExtension.php
+
+		-
+			message: "#^Call to an undefined method BombenProdukt\\\\Interfail\\\\Extensions\\\\FailuresAllowedForSecondsExtension\\:\\:validate\\(\\)\\.$#"
+			count: 1
+			path: src/Extensions/FailuresAllowedForSecondsExtension.php
+
+		-
+			message: "#^Access to an uninitialized readonly property BombenProdukt\\\\Interfail\\\\Interfail\\:\\:\\$id\\.$#"
+			count: 1
+			path: src/Interfail.php
+
+		-
+			message: "#^Parameter \\#3 \\$sleepMilliseconds of function retry expects int, Closure\\|int given\\.$#"
+			count: 1
+			path: src/Interfail.php
+
+		-
+			message: "#^Using nullsafe property access on non\\-nullable type BombenProdukt\\\\Interfail\\\\Data\\\\Retry\\. Use \\-\\> instead\\.$#"
+			count: 3
+			path: src/Interfail.php
