@@ -19,7 +19,7 @@ trait HasRetries
     public function retry(
         int|array $times,
         int|Closure $sleepMilliseconds,
-        Closure|null $when,
+        ?Closure $when,
     ): self {
         $this->retry = new Retry($times, $sleepMilliseconds, $when);
 

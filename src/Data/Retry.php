@@ -11,7 +11,7 @@ final class Retry
     public function __construct(
         public readonly int|array $times,
         public readonly int|Closure $sleepMilliseconds,
-        public readonly Closure|null $when,
+        public readonly ?Closure $when,
     ) {
         //
     }
