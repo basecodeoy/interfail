@@ -1,6 +1,11 @@
 parameters:
 	ignoreErrors:
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 3
+			path: src/Data/Result.php
+
+		-
 			message: "#^Call to an undefined method BombenProdukt\\\\Interfail\\\\Extensions\\\\FailuresAllowedForDaysExtension\\:\\:validate\\(\\)\\.$#"
 			count: 1
 			path: src/Extensions/FailuresAllowedForDaysExtension.php
@@ -19,11 +24,6 @@ parameters:
 			message: "#^Call to an undefined method BombenProdukt\\\\Interfail\\\\Extensions\\\\FailuresAllowedForSecondsExtension\\:\\:validate\\(\\)\\.$#"
 			count: 1
 			path: src/Extensions/FailuresAllowedForSecondsExtension.php
-
-		-
-			message: "#^Access to an uninitialized readonly property BombenProdukt\\\\Interfail\\\\Interfail\\:\\:\\$id\\.$#"
-			count: 1
-			path: src/Interfail.php
 
 		-
 			message: "#^Only iterables can be unpacked, mixed given in argument \\#1\\.$#"
