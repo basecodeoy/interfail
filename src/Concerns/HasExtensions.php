@@ -1,0 +1,25 @@
+<?php declare(strict_types=1);
+
+/**
+ * Copyright (C) BaseCode Oy - All Rights Reserved
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE file that was distributed with this source code.
+ */
+
+namespace BaseCodeOy\Interfail\Concerns;
+
+use BaseCodeOy\Interfail\Contracts\Extension;
+
+trait HasExtensions
+{
+    /** @var array<Extension> */
+    private array $extensions = [];
+
+    public function addExtension(Extension $extension): self
+    {
+        $this->extensions[] = $extension;
+
+        return $this;
+    }
+}
