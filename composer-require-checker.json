@@ -1,0 +1,14 @@
+{
+    "symbol-whitelist": [
+        "array",
+        "bool",
+        "false",
+        "int",
+        "null",
+        "self",
+        "string",
+        "true",
+        "retry",
+        "Illuminate\\Support\\Facades\\Cache"
+    ]
+}
